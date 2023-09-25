@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: flex;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: gray;
+  text-align: center;
+  padding: 40px;
+  margin-right: 20px;
+}
+
+h1,
+.score-para,
+.main-container {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 8px;
+  background-color: aquamarine;
+}
