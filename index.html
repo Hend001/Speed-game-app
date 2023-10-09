@@ -3,20 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Speed-game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lato:wght@300;400&family=Nunito+Sans:ital,opsz,wght@1,6..12,200;1,6..12,700&family=Pixelify+Sans:wght@500&family=Plus+Jakarta+Sans:wght@800&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Source+Sans+3:wght@300&family=Work+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lato:wght@400;700&family=Nunito+Sans:ital,opsz,wght@1,6..12,200;1,6..12,700&family=Pixelify+Sans:wght@500&family=Plus+Jakarta+Sans:wght@800&family=Press+Start+2P&family=Roboto+Condensed:wght@300&family=Source+Sans+3:wght@300&family=Work+Sans:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Speedgame</h1>
-    <p class="score-para">Score <span class="score">0</span></p>
-    <div class="main-container">
-      <div class="circle first-div"><p>0</p></div>
-      <div class="circle sec-div"><p>1</p></div>
-      <div class="circle third-div"><p>2</p></div>
-      <div class="circle fourth-div"><p>3</p></div>
+    <button class="mute-button">Mute</button>
+    <div class="overlay">
+      <div class="modal">
+        <button class="close">X</button>
+        <h4>Score</h4>
+        <p class="modal-score-para">
+          Your score is : <span class="modal-score">0</span>
+        </p>
+        <p class="final-msg">Game Over</p>
+      </div>
     </div>
-    <button id="startButton">Start game</button>
-    <button id="endButton">End game</button>
+    <div class="main-div">
+      <div class="heading-para-container">
+        <h1><i>Speed game</i></h1>
+        <p class="score-para">Score: <span class="score score-para">0</span></p>
+      </div>
+      <div class="buttons-circles-container">
+        <div class="main-container">
+          <div class="first-div">
+            <div class="circle inside-first-div"><p></p></div>
+            <img src="./29035872.png" alt="" />
+          </div>
+          <div class="sec-div">
+            <div class="circle"><p></p></div>
+            <img src="./29035872.png" alt="" />
+          </div>
+          <div class="third-div">
+            <div class="circle"><p></p></div>
+            <img src="./29035872.png" alt="" />
+          </div>
+          <div class="fourth-div">
+            <div class="circle"><p></p></div>
+            <img src="./29035872.png" alt="" />
+          </div>
+        </div>
+        <div class="buttons-div">
+          <button id="startButton" class="dbutton startButtonn">Start</button>
+          <button id="endButton" class="dbutton endbuttonn">Stop</button>
+        </div>
+      </div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>

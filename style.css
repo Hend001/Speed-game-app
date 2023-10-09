@@ -6,44 +6,180 @@
 
 body {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(#eba6ec, #eee1eb);
+  position: relative;
+  /*background: linear-gradient(#e66465, #9198e5);*/
+  background-image: url(./super-mario-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100% 100%;
+  /*background-position: center;*/
+  object-fit: fill;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+}
+
+.mute-button {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.main-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading-para-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.buttons-circles-container {
+  /* margin-top: 370px; */
+  display: flex;
+  flex-direction: column;
 }
 
 .main-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .circle {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   border-radius: 50px;
-  background-color: gray;
+  background-color: transparent;
   text-align: center;
   padding: 40px;
-  margin-right: 20px;
   pointer-events: none;
 }
 
-h1,
-.score-para,
-.main-container {
-  margin-bottom: 100px;
+.first-div,
+.sec-div,
+.third-div,
+.fourth-div {
+  margin-left: 20px;
 }
 
-button {
-  padding: 10px 20px;
-  border-radius: 8px;
-  background-color: aquamarine;
-  margin-top: 80px;
+h1 {
+  font-size: 2rem;
+  padding-top: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.score-para {
+  font-size: 1.5rem;
+  padding-top: 20px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .circle.active {
+  background-image: url(./Screenshot\ 2023-10-01\ at\ 14.58.50.png);
+  background-size: 60% auto; /* Adjust the size as needed */
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+}
+
+.dbutton {
+  /* padding: 10px 20px; */
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
   background-color: tomato;
+  border: 5px solid black;
+}
+
+.startButtonn {
+  margin-right: 60%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.endbuttonn {
+  display: none;
+  margin-left: 70%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+/* .buttons-div { */
+/* display: flex;
+  justify-content: space-around;
+}*/
+
+.overlay {
+  background-color: #333333ce;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay.visible {
+  display: flex;
+}
+
+.modal {
+  position: relative;
+  background-color: white;
+  margin: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-radius: 5px;
+  max-width: 600px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+}
+
+.one {
+  display: none;
+}
+
+.two {
+  display: none;
+}
+
+.three {
+  display: none;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.modal-score-para {
+  font-family: "Lato", sans-serif;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.final-msg {
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+  font-weight: lighter;
 }
