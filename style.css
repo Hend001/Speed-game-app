@@ -7,21 +7,13 @@
 body {
   height: 100vh;
   position: relative;
-  /*background: linear-gradient(#e66465, #9198e5);*/
   background-image: url(./super-mario-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
-  /*background-position: center;*/
   object-fit: fill;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
-}
-
-.mute-button {
-  position: absolute;
-  left: 30px;
-  top: 30px;
 }
 
 .main-div {
@@ -88,9 +80,8 @@ h1 {
 }
 
 .dbutton {
-  /* padding: 10px 20px; */
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
   border-radius: 50px;
   background-color: tomato;
   border: 5px solid black;
@@ -110,11 +101,6 @@ h1 {
   font-size: 1rem;
   font-weight: 800;
 }
-
-/* .buttons-div { */
-/* display: flex;
-  justify-content: space-around;
-}*/
 
 .overlay {
   background-color: #333333ce;

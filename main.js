@@ -84,7 +84,6 @@ const startGame = () => {
   pace -= 10;
   rounds++;
   if (rounds > 3) {
-    document.querySelector(".final-msg").textContent = "try u";
   }
 
   function pickNew(active) {
