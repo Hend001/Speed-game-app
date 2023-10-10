@@ -16,7 +16,7 @@ let timer;
 let pace = 1000;
 let active = 0;
 let rounds = 0;
-const Music = new Audio("Game A.mp3");
+const Music = new Audio("./Audio/Game A.mp3");
 
 const generateNumbers = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -26,7 +26,7 @@ const clickCircle = (i) => {
   if (i !== active) {
     return endGame();
   }
-  let mySound = new Audio("Mario Jump - QuickSounds.com.mp3");
+  let mySound = new Audio("./Audio/Mario Jump - QuickSounds.com.mp3");
   mySound.play();
   mySound.volume = 0.1;
 
@@ -40,7 +40,7 @@ const clickCircle = (i) => {
   if (score <= 30) {
     document.querySelector(".final-msg").textContent =
       "I believe in you 🤥.Try harder 😬 ";
-  } else if (score > 30 && score < 50) {
+  } else if (score > 30 && score < 70) {
     document.querySelector(".final-msg").textContent =
       "Average 🫢.Keep going 🤛";
   } else {
@@ -96,7 +96,7 @@ const startGame = () => {
 };
 
 const endGame = () => {
-  let mySound = new Audio("Mario Death - QuickSounds.com.mp3");
+  let mySound = new Audio("./Audio/Mario Death - QuickSounds.com.mp3");
   mySound.play();
   clearTimeout(timer);
   modalShow();
