@@ -7,7 +7,7 @@
 body {
   height: 100vh;
   position: relative;
-  background-image: url(./super-mario-background.jpg);
+  background-image: url(./images/super-mario-background.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -72,8 +72,8 @@ h1 {
 }
 
 .circle.active {
-  background-image: url(./Screenshot\ 2023-10-01\ at\ 14.58.50.png);
-  background-size: 60% auto; /* Adjust the size as needed */
+  background-image: url(./images/Mario.png);
+  background-size: 60% auto;
   background-repeat: no-repeat;
   background-position: center;
   object-fit: cover;
